@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashwini Baliga | CSE-AIML Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of Ashwini Baliga, a Computer Science and Engineering student specialising in Artificial Intelligence and Machine Learning at AJ Institute of Engineering and Technology. Frontend developer and hackathon winner." />
+    <meta property="og:title" content="Ashwini Baliga | Portfolio" />
+    <meta property="og:description" content="CSE-AIML student, frontend developer, and hackathon winner." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0B0B12" />
+    <script>
+      // Prevent FOUC: apply stored theme before first paint
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = stored ? stored === 'dark' : prefersDark !== false;
+          document.documentElement.classList.toggle('dark', isDark);
+          document.documentElement.classList.toggle('light', !isDark);
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
